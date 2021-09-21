@@ -100,6 +100,8 @@ only works using a custom runner hosted on GCP.**
 ```yaml
 - id: get-credentials
   uses: google-github-actions/get-gke-credentials@main
+  env:
+    GCLOUD_PROJECT: my-project
   with:
     cluster_name: my-cluster
     location: us-central1-a
